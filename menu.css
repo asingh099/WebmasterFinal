@@ -1,0 +1,249 @@
+body{
+    font-family: "Rubik", serif;
+    background-color: #e1d585;
+    margin: 0;
+    width: 100%;
+}
+div.title{
+    display: flex;
+    justify-content: center;
+    background-color:  #A4BD38;
+    border-radius: 4px;
+    align-items: center;
+}
+div.links{
+    display: flex;
+    justify-content: center;
+}
+div.links a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #A4BD38;
+    position: relative;
+    width: max-content;
+}
+div.links a.inactive{
+    color: black;
+}
+div.links a:first-child{
+    border-radius: 0 0 0 4px;
+}
+div.links a:last-child{
+    border-radius: 0 0 4px 0;
+}
+div.links a.inactive:hover::after{
+    transform: scale(1);
+}
+div.links a.inactive::after{
+    left: 10px;
+    right: 10px;
+    position: absolute;
+    content: "";
+    height: 3px;
+    background: #D9A13B;
+    bottom: 10px;
+    transition-duration: 1s;
+    transform: scale(0);
+}
+a.active{
+    color: #FFFFFF;
+}
+
+/*Cart*/
+
+#cart{
+    cursor: pointer;
+    position: absolute;
+    right: 100px;
+    padding-inline: 10px;
+    font-size: 30px;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+}
+#cart:hover{
+    top: 20px;
+}
+/*Menu Items*/
+
+/*Appetizers*/
+
+.appetizers{
+    text-align: center;
+}
+.appetizer-cards{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.bruschettaBites, .garlicBread, .breadsticks{
+    width: 320px;
+    text-align: center;
+    border-radius: 15px;
+    height: 400px;
+    background-color: #D9A13B;
+    box-shadow: 0 4px 8px 0;
+    position: relative;
+}
+.bruschettaBites img, .garlicBread img, .breadsticks img{
+    width: 200px;
+}
+.bruschettaBites p, .garlicBread p, .breadsticks p{
+    margin: 10px;
+}
+.bruschettaBites:hover, .garlicBread:hover, .breadsticks:hover{
+    box-shadow:0 8px 16px 0;
+}
+
+/*Pizzas*/
+
+.pizzas{
+    text-align: center;
+}
+.pizza-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.margherita, .fourCheese, .vegetable{
+    width: 320px;
+    text-align: center;
+    border-radius: 15px;
+    height: 400px;
+    background-color: #D9A13B;
+    box-shadow: 0 4px 8px 0;
+    position: relative;
+}
+.margherita p, .fourCheese p, .vegetable p{
+    margin: 10px;
+}
+.margherita:hover, .fourCheese:hover, .vegetable:hover{
+    box-shadow:0 8px 16px 0;
+}
+.pizza-cards select{
+    position: absolute;
+    width: 175px;
+    text-align: center;
+    left: 72px;
+    border-radius: 8px;
+    font-weight: 600;
+    bottom: 60px;
+    border: 2px solid black;
+}
+
+ /*Buttons*/
+.flex-container button{
+    position: absolute;
+    height: 30px;
+    width: 200px;
+    bottom: 20px;
+    left: 60px;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    font-size: 13px;
+}
+.flex-container button:hover::after{
+    position: absolute;
+    font-size: 13px;
+}
+.flex-container button::after{
+    content: "Add To Cart";
+    font-size: 0;
+    top: 7px;
+    left: 62px;
+    transition: font-size 1s;
+}
+.flex-container button:hover{
+    font-size: 0;
+    background-color: greenyellow;
+}
+
+/*Pastas*/
+.pastas{
+    text-align: center;
+}
+.pasta-cards{
+    text-align: center;
+}
+.pasta-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.eggplantParm, .FettucineAlfredo, .Pici{
+    width: 320px;
+    text-align: center;
+    border-radius: 15px;
+    height: 400px;
+    background-color: #D9A13B;
+    box-shadow: 0 4px 8px 0;
+    position: relative;
+}
+.FettucineAlfredo img, .eggplantParm img, .Pici img{
+    width: 200px;
+}
+.FettucineAlfredo p, .eggplantParm p, .Pici p{
+    margin: 10px;
+}
+.FettucineAlfredo:hover, .eggplantParm:hover, .Pici:hover{
+    box-shadow:0 8px 16px 0;
+}
+
+/*desserts*/
+.desserts{
+    text-align: center;
+}
+.dessert-cards{
+    text-align: center;
+}
+.dessert-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.tiramisu, .gelato, .affogato{
+    width: 320px;
+    text-align: center;
+    border-radius: 15px;
+    height: 400px;
+    background-color: #D9A13B;
+    box-shadow: 0 4px 8px 0;
+    position: relative;
+}
+.tiramisu img{
+    width: 200px;
+}
+.gelato img, .affogato img{
+    width: 150px;
+}
+.tiramisu p, .gelato p, .affogato p{
+    margin: 10px;
+}
+.tiramisu:hover, .gelato:hover, .affogato:hover{
+    box-shadow:0 8px 16px 0;
+}
+.gelato select{
+    position: absolute;
+    width: 175px;
+    text-align: center;
+    left: 72px;
+    border-radius: 8px;
+    font-weight: 600;
+    bottom: 60px;
+    border: 2px solid black;
+}
+
+/*FOOTER*/
+
+footer{
+    margin-top: 30px;
+    background-color: rgb(91, 199, 75);
+    align-content: center;
+    color: black;
+    text-align: center;
+    height: 200px;
+    padding-bottom: 20px;
+    border-radius: 0;
+}

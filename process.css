@@ -1,0 +1,151 @@
+body{
+    font-family: "Rubik", serif;
+    background-color: #e1d585;
+    margin: 0;
+    width: 100%;
+}
+div.title{
+    display: flex;
+    justify-content: center;
+    background-color:  #A4BD38;
+    border-radius: 4px;
+    align-items: center;
+}
+div.links{
+    display: flex;
+    justify-content: center;
+}
+div.links a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #A4BD38;
+    position: relative;
+    width: max-content;
+}
+div.links a.inactive{
+    color: black;
+}
+div.links a:first-child{
+    border-radius: 0 0 0 4px;
+}
+div.links a:last-child{
+    border-radius: 0 0 4px 0;
+}
+div.links a.inactive:hover::after{
+    transform: scale(1);
+}
+div.links a.inactive::after{
+    left: 10px;
+    right: 10px;
+    position: absolute;
+    content: "";
+    height: 3px;
+    background: #D9A13B;
+    bottom: 10px;
+    transition-duration: 1s;
+    transform: scale(0);
+}
+a.active{
+    color: #FFFFFF;
+}
+
+/*Cart*/
+
+#cart{
+    cursor: pointer;
+    position: absolute;
+    right: 100px;
+    padding-inline: 10px;
+    font-size: 30px;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+}
+#cart:hover{
+    top: 20px;
+}
+h1{
+    text-align: center;
+}
+.process{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    flex-direction: column;
+    gap: 20px;
+}
+.farmCards, .prepCards, .missionCards{
+    width: 1200px;
+    height: 300px;
+    perspective: 1400px;
+}
+.farmCards:hover > .farmCard, .prepCards:hover > .prepCard, .missionCards:hover > .missionCard{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.farmCard, .prepCard, .missionCard{
+    width: 100%;
+    height: 100%;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.farmFront, .farmBack, .prepFront, .prepBack, .missionFront, .missionBack{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    border: 4px solid black;
+}
+.farmFront, .prepFront, .missionFront{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+.farmFront{
+    background-image: url(https://img.freepik.com/free-vector/flat-farm-landscape_23-2148177923.jpg?t=st=1736256349~exp=1736259949~hmac=8f7d019664d1fc145480d96b97cac5a97291154ab5cbf9e9bdd33c34a14aa899&w=900);
+}
+.prepFront{
+    background-image: url(https://img.freepik.com/free-photo/various-vegetables-wooden-table-against-background-modern-kitchen-interior_169016-9612.jpg?t=st=1736256469~exp=1736260069~hmac=d08536354efe9b075142eb742fc75bf24a41b51ca5590069e56b8790af583498&w=996);
+    background-position: center;
+}
+.missionFront{
+    background-image: url(https://img.freepik.com/free-photo/3d-render-globe-covered-grass_1048-5511.jpg?t=st=1736256714~exp=1736260314~hmac=4d6d6b650abac2f1d5734171607573950eace8daf5f1f7340703f533070a4ece&w=740);
+    background-position: center;
+    color: white;
+    font-size: 40px;
+}
+.farmBack, .prepBack, .missionBack{
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.farmBack p, .prepBack p, .missionBack p{
+    text-align: center;
+    font-size: 20px;
+}
+    
+
+
+/*FOOTER*/
+
+footer{
+    align-content: center;
+    background-color: rgb(91, 199, 75);
+    color: black;
+    text-align: center;
+    height: 200px;
+    padding-bottom: 20px;
+    border-radius: 0;
+}

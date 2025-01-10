@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="webmaster.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="topNav">
+        <div class="title">
+            <h1>
+                Viva Natura
+            </h1>
+            <a href="newWebmaster.html"><img src="Webmaster Logo.png" alt=""></a>
+            <a href="cart.html">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg id="cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.02 198.27">
+                    <defs>
+                      <style>
+                        .circle {
+                          fill: #231f20;
+                        }
+                  
+                        .circle, .circle2 {
+                          stroke: #231f20;
+                          stroke-miterlimit: 10;
+                        }
+                  
+                        .circle2 {
+                          fill: none;
+                        }
+                      </style>
+                    </defs>
+                    <line class="cls-2" x1="31.37" y1="27.66" x2="87.82" y2="182.77"/>
+                    <circle class="cls-circle" cx="87.82" cy="182.77" r="15"/>
+                    <circle class="cls-circle" cx="217.77" cy="182.77" r="15"/>
+                    <rect class="cls-circle" x="87.82" y="167.77" width="129.95" height="6"/>
+                    <rect class="cls-circle" x="-28.05" y="90.46" width="171.09" height="4.36" transform="translate(124.88 6.93) rotate(70)"/>
+                    <path class="cls-circle" d="M46.23,52.06h202.32H46.23Z"/>
+                    <polyline class="cls-circle" points="248.56 52.06 217.77 136.63 76.09 136.63 217.77 136.63 76.09 136.63 46.23 52.06"/>
+                    <path class="cls-circle2" d="M.5,11.16h30H.5Z"/>
+                    <polyline class="cls-circle" points="32.33 17.12 .5 16.82 .5 11.16 30.5 11.16"/>
+                  </svg>
+                </a>      
+        </div>
+
+        <div class="links">
+            <a href="newWebmaster.html" class="inactive">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="process.html" class="inactive">Process</a>
+            <a href="references.html" class="inactive">References</a>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="appetizers">
+            <h2>Appetizers</h2>
+        </div>
+        <div class="flex-container">
+            <div class="appetizer-cards">
+                <div class="garlicBread">
+                    <h2>Garlic Bread</h2>
+                    <img src="Garlic Bread.jpg" alt="">
+                    <p>These small, delectable pieces of fluffy bread with garlic and butter are ther perfect pair with marinara sauce to make a heavenly combo exploding in your mouth</p>
+                    <button onclick="addToCart('Garlic Bread', 8.99)">$8.99</button>
+                </div>
+                <div class="breadsticks">
+                    <h2>Breadsticks</h2>
+                    <img src="Breadsticks.jpg" alt="Breadsticks">
+                    <p>These classic breadsticks have the perfect amount of crunch and fluffiness to be paired with butter</p>
+                    <button onclick="addToCart('Breadsticks', 14.99)">$11.99</button>
+                </div>
+                <div class="bruschettaBites">
+                    <h2>Bruschetta Bites</h2>
+                    <img src="Bruschetta Bites.jpg" alt="bruschettaBites">
+                    <p>These bites are tasty Italian appetizers consisting of bread, tomatoes, basil, garlic, olive oil, and balsamic vinegar</p>
+                    <button onclick="addToCart('Bruschetta Bites', 14.99)">$14.99</button>
+                </div>
+            </div>
+        </div>
+        <div class="pizzas">
+            <h2>Pizzas</h2>
+            <p>Small (10"), Medium (12"), Large (14"), Extra Large (16")</p>
+        </div>
+        <div class="flex-container">
+            <div class="pizza-cards">
+                <div class="margherita">
+                    <h2>Margherita Pizza</h2>
+                    <img src="MargheritaPizza.jpg" alt="Margherita Pizza">
+                    <p>This Italian classic features basil leaves, tomatoes, and mozzarella cheese coating a thin crust </p>
+                    <select name="size" id="sizeOfMargherita">
+                        <option value="Small">Small $12.99</option>
+                        <option value="Medium">Medium $14.99</option>
+                        <option value="Large">Large $15.99</option>
+                        <option value="XLarge">Extra Large $17.99</option>
+                    </select>
+                    <button onclick = "margheritaPizzaSizePrice('sizeOfMargherita')">Price Depends</button>
+                </div>
+                <div class="fourCheese">
+                    <h2>Four-Cheese Pizza</h2>
+                    <img src="4CheesePizza.jpg" alt="Four Cheese Pizza">
+                    <p>This cheesy delight combines mozzarella cheese, gorgonzola, parmigiano reggiano, and goat cheese to create a mouthwatering pizza</p>
+                    <select name="size" id="sizeOf4Cheese">
+                        <option value="Small">Small $10.99</option>
+                        <option value="Medium">Medium $12.99</option>
+                        <option value="Large">Large $13.99</option>
+                        <option value="XLarge">Extra Large $15.99</option>
+                    </select>
+                    <button onclick="fourCheesePizzaSizePrice('sizeOf4Cheese')">Price Depends</button>
+                </div>
+                <div class="vegetable">
+                    <h2>Vegetable Pizza</h2>
+                    <img src="VeggiePizza.jpg" alt="Veggie Pizza">
+                    <p>This pizza puts a twist on the regular cheese by including olives, mushrooms, bell peppers, and onions</p>
+                    <select name="size" id="sizeOfVeggie">
+                        <option value="Small">Small $10.99</option>
+                        <option value="Medium">Medium $12.99</option>
+                        <option value="Large">Large $13.99</option>
+                        <option value="XLarge">Extra Large $15.99</option>
+                    </select>
+                    <button onclick="veggiePizzaSizePrice('sizeOfVeggie')">Price Depends</button>
+                </div>
+            </div>
+        </div>
+        <div class="pastas">
+            <h2>Pastas</h2>
+        </div>
+        <div class="flex-container">
+            <div class="pasta-cards">
+                <div class="eggplantParm">
+                    <h2>Eggplant Parmesan</h2>
+                    <img src="EggplantParm.jpg" alt="">
+                    <p>This pasta features crispy eggplants, cooked to perfection, coupled with ricotta cheese and pasta to create a masterpiece</p>
+                    <button onclick="addToCart('Eggplant Parmesan', 15.99)">$15.99</button>
+                </div>
+                <div class="FettucineAlfredo">
+                    <h2>Fettucine Alfredo</h2>
+                    <img src="Fettucine Alfredo.jpg" alt="Fettucine Alfredo">
+                    <p>This dish utilizes fettucine pasta and butter mixed with parmesan cheese to create a delicious concoction</p>
+                    <button onclick="addToCart('Fettucine Alfredo', 18.99)">$18.99</button>
+                </div>
+                <div class="Pici">
+                    <h2>Pici All’Aglione</h2>
+                    <img src="Pici all’Aglione.jpg" alt="">
+                    <p>This dish from Tuscany uses pici pasta with an elephant garlic infused tomato sauce to create a delicous dish that leaves you yearning for more </p>
+                    <button onclick="addToCart('Pici All’Aglione', 19.99)">$19.99</button>
+                </div>
+            </div>
+        </div>
+        <div class="desserts">
+            <h2>Desserts</h2>
+        </div>
+        <div class="flex-container">
+            <div class="dessert-cards">
+                <div class="gelato">
+                    <h2>Gelato</h2>
+                    <img src="Gelato.jpg" alt="">
+                    <p>This is a creamy, frozen dessert made from milk, sugar, and cream creating a smooth consistency that melts in your mouth</p>
+                    <select name="flavor" id="gelatoFlavor">
+                        <option value="Strawberry">Strawberry</option>
+                        <option value="Watermelon">Watermelon</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Chocolate">Chocolate</option>
+                    </select>
+                    <button onclick="gelatoFlavor('gelatoFlavor')">$6.99</button>
+                </div>
+                <div class="tiramisu">
+                    <h2>Tiramisu</h2>
+                    <img src="Tiramisu.jpg" alt="Fettucine Alfredo">
+                    <p>This is a classic Italian dessert that has multiple layers of coffee-soaked ladyfingers added to a mixture of cheese, eggs, and sugar.</p>
+                    <button onclick="addToCart('Tiramisu', 7.99)">$7.99</button>
+                </div>
+                <div class="affogato">
+                    <h2>Affogato</h2>
+                    <img src="Affogato.jpg" alt="">
+                    <p>This is an Italian dessert that contains vanilla gelato and espresso forming a delicious dessert</p>
+                    <button onclick="addToCart('Affogato', 8.99)">$8.99</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Phone Number: 484-193-0912</p>
+        <p>Email: vivanatura@gmail.com</p>
+        <p>Instagram: @VivaNatura</p>
+    </footer>
+</body>
+</html>
