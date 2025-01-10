@@ -70,6 +70,28 @@ a.active{
 }
 /*Menu Items*/
 
+/*Drinks*/
+
+.drinks{
+    text-align: center;
+}
+.drink-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.negroni, .chinotto, .limonada{
+    width: 320px;
+    text-align: center;
+    border-radius: 15px;
+    height: 110px;
+    background-color: #D9A13B;
+    box-shadow: 0 4px 8px 0;
+    position: relative;
+}
+.negroni:hover, .chinotto:hover, .limonada:hover{
+    box-shadow:0 8px 16px 0;
+}
+
 /*Appetizers*/
 
 .appetizers{
